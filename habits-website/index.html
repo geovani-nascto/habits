@@ -6,22 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habits</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/script.js"></script>
   </head>
   <body>
     <header>
         <img src="assets/svg/logo.svg" alt="Logo do website Habits">
-        <button><img src="assets/svg/plus.svg" alt="Sinal de mais"> Registrar meu dia</button>
+        <button>
+            <img src="assets/svg/plus.svg" alt="Sinal de mais"> <div>Registrar meu dia</div>
+        </button>
     </header>
 
     <form>
         <div class="habits">
-            <div class="habit">&#x1F3C3;</div>
-            <div class="habit">&#x1F4A7;</div>
-            <div class="habit">🍏</div>
+            <div class="habit" data-name="run">&#x1F3C3;</div>
+            <div class="habit" data-name="water">💧</div>
+            <div class="habit" data-name="food">🍏</div>
+            <div class="habit" data-name="journal">📕</div>
+            <div class="habit" data-name="takePills">💊</div>
         </div>
 
         <div class="days">
-            <div class="day">
+            <!-- <div class="day">
                 <div>03/01</div>
                 <input type="checkbox" name="run">
                 <input type="checkbox" name="water">
@@ -33,8 +38,10 @@
                 <input type="checkbox" name="run">
                 <input type="checkbox" name="water">
                 <input type="checkbox" name="apple">
-            </div>
+            </div> -->
         </div>
     </form>
+
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
   </body>
 </html>

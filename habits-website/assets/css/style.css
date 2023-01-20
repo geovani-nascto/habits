@@ -2,28 +2,29 @@
 
 
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  body {
+body {
     background-color: #09090a;
     color: white;
-  
+
     height: 100vh;
-  }
+}
   
-  header {
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
+    position: fixed;
+    width: 100%;
     padding: 48px;
-  }
+}
   
-  button {
+button {
     padding: 16px 24px;
     border-radius: 8px;
     border: 1px solid #8b5cf6;
@@ -39,22 +40,23 @@
     font-size: 16px;
     line-height: 125%;
     cursor: pointer;
-  }
+}
   
-  form{
+form{
     display: flex;
-    padding: 0 48px;
-  }
+    padding: 180px 48px 48px;
+    width: fit-content;
+}
   
-  .habits {
+.habits {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
   
     gap: 24px;
-  }
+}
   
-  .habit {
+.habit {
     width: 64px;
     height: 64px;
   
@@ -63,21 +65,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+    width: fit-content; /*Encaixar com o espaçamento coreto*/
+}
   
-  .days {
+.days {
     display: flex;
     gap: 48px;
     margin-left: 32px;
-  }
+}
   
-  .day {
+.day {
     display: flex;
     flex-direction: column;
     gap: 24px;
-  }
+}
   
-  .day div {
+.day div {
     margin-bottom: 8px;
   
     font-family: 'Roboto Mono';
@@ -87,9 +90,9 @@
     color: #A1A1AA;
   
     text-align: center;
-  }
+}
   
-  input {
+input {
     appearance: none;
     -webkit-appearance: none;
   
@@ -101,9 +104,16 @@
   
     background: #18181B;
     cursor: pointer;
-  }
+}
   
-  input:checked {
+input:checked {
     background: #8B5CF6;
     border: 2px solid #A78BFA;
-  }
+}
+
+
+@media (max-width: 570px){
+    button div{
+        display: none;
+    }
+}
